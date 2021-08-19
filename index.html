@@ -4,11 +4,19 @@
 		<meta charset="utf-8">
 		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="css/viewer.min.css"/>
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head>
 	<body>
-		<div id="main">
-			{{time}}
+		<div class="main" id="main">
+			<div class="header">
+				<div class="header-left">
+					<div class="tab" v-for="(tab,index) of tabs" :key="index" @click="clickTab(tab)">{{tab.name}}</div>
+				</div>
+				<div class="header-right">{{time}}</div>
+			</div>
+			<div class="body">
+				<iframe :src="iframeSrc"></iframe>
+			</div>
 		</div>
 	</body>
 	<script src="js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>

@@ -3,11 +3,17 @@ $(function() {
 		el: "#main",
 		data() {
 			return {
-				time:''
+				time:'',
+				tabs:[
+					{name:'首页',src:''},
+					{name:'首页1',src:''},
+				],
+				iframeSrc:''
 			};
 		},
 		mounted() {
 			this.startGetTime();
+			this.clickTab(this.tabs[0]);
 		},
 		created() {
 
@@ -18,6 +24,9 @@ $(function() {
 				setInterval(()=>{
 					_this.time = dateFormat(new Date(),'YYYY年MM月DD日 HH:mm:ss');
 				},500);
+			},
+			clickTab(tab){
+				
 			},
 		},
 	})
