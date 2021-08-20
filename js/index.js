@@ -6,9 +6,9 @@ $(function() {
 				time:'',
 				tabs:[
 					{name:'首页',src:''},
-					{name:'首页1',src:''},
+					{name:'图片墙',src:'picWall.html'},
 				],
-				iframeSrc:''
+				iframeSrc:'',
 			};
 		},
 		mounted() {
@@ -26,7 +26,7 @@ $(function() {
 				},500);
 			},
 			clickTab(tab){
-				
+				this.iframeSrc = tab.src;
 			},
 		},
 	})
