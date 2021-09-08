@@ -1,0 +1,80 @@
+<link rel="stylesheet" type="text/css" href="css/viewer.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/meteor.css"/>
+
+<div class="main-box">
+	<textarea id="txt"></textarea>
+	<div class="btn-box"><input type="button" name="" id="" value=" 生成 " onclick="toStart()"/></div>
+	<div class="show-box" id="show_box"></div>
+</div>
+
+<script src="js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/viewer-jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/utils.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/meteor.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function toStart(){
+		var txt = $('#txt').val();
+		console.log(txt);
+		var arr = [
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+			'22',
+			'44',
+		]
+		meteor(arr,'#show_box');
+	}
+</script>

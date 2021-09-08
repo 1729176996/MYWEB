@@ -7,6 +7,7 @@ $(function() {
 				tabs:[
 					{name:'首页',src:''},
 					{name:'图片墙',src:'picWall.html'},
+					{name:'流星',src:'meteor.html'},
 				],
 				iframeSrc:'',
 			};
