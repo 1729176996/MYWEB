@@ -1,4 +1,8 @@
-function meteor(arr,selector){
+function meteor(txt,selector){
+	var arr = [];
+	for(var n=0;n<txt.length;n++){
+		arr.push(txt[n]);
+	}
 	$(selector).html('');
 	if(arr&&arr.length>0){
 		var width = $(window).width();
