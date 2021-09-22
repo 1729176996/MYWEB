@@ -8,6 +8,7 @@ $(function() {
 					{name:'首页',src:''},
 					{name:'图片墙',src:'picWall.html'},
 					{name:'流星',src:'meteor.html'},
+					{name:'文字',src:'txt.html'},
 				],
 				iframeSrc:'',
 			};
