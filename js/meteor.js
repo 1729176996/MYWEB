@@ -1,4 +1,4 @@
-function meteor(txt,selector){
+function txtMeteor(txt,selector){
 	var arr = [];
 	for(var n=0;n<txt.length;n++){
 		arr.push(txt[n]);
@@ -15,8 +15,8 @@ function meteor(txt,selector){
 			var y = $(".no_"+uuid).position().left;
 			var top = randomNum(height-y,(0-y));
 			var left = randomNum(width-x,(0-x));
-			console.log('top',top);
-			console.log('left',left);
+			//console.log('top',top);
+			//console.log('left',left);
 			$(".no_"+uuid).css('top',top+'px');
 			$(".no_"+uuid).css('left',left+'px');
 			$(".no_"+uuid).animate({top:"0",left:"0"},1000);
